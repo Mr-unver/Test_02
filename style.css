@@ -67,16 +67,15 @@ table {
     font-family: 'Gotham Pro medium'; 
     src: url('fonts/gothampro_medium.ttf') format('truetype'); 
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
     .girl {
-      visibility: hidden;
+        visibility: collapse;
+        display: none
     }
     .intro {
-        display: grid;
-        flex-wrap: wrap;
-        grid-template-columns: 50% 0% 50%;
-        padding-top: 240px;
+        justify-content: right;
     }
+
 }
 html {
     box-sizing: border-box;
@@ -84,13 +83,16 @@ html {
 *, *::before, *::after {
     box-sizing: inherit;
 }
+.body {
+}
 .wrapper {
     max-width: 1180px;
     margin: 0 auto;
+    min-width: 1024px;
 }
 /* headers styles: start */
 .header__wraper {
-    display: grid;
+    display: flex;
     grid-template-columns: 5fr 1fr;
     align-items: center; 
     max-height: 140px;
@@ -196,9 +198,8 @@ html {
     background-size: cover;
 }
 .intro {
-    display: grid;
+    display: flex;
     flex-wrap: nowrap;
-    grid-template-columns: 33% 33% 33%;
     padding-top: 240px;
 }
 .benefits__title h1:first-child {
@@ -252,36 +253,41 @@ html {
     line-height: 22px;
     color: #009FE3;
 }
+.girl {
+    margin-left: -230px;
+    max-width: 610px;
+    margin-top: -135px;
+    z-index: 7;
+}
 .feedback {
     height: 465px;
     max-width: 590px;
-    background: url('img/rectangle.svg') no-repeat right;
+    background: url('img/rectangle.svg') no-repeat left;
     background-size: contain;
     margin-top: -35px;
-}
-.girl {
-    margin-top: -135px;
-    margin-left: -210px;
-    z-index: 7;
+    margin-left: 10px;
 }
 .feedback__form {
-    height: 240px;
-    width: 325px;
-    margin-left: 45px;
+    height: 370px;
+    width: 465px;
     margin-top: 60px;
+    margin-left: 0px;
 }
 .feedback__text {
-    position: absolute;
+    padding-left: 25px;
     font-family: 'Gotham Pro';
     font-size: 15px;
     line-height: 20px;
     color: #1A191C;
 }
+.contact__consumer {
+    margin-left: 25px;
+    margin-top: 30px;
+}
 .phone__consumer {
+    margin-bottom: 10px;
     width: 320px;
     height: 60px;
-    margin-top: 110px;
-    margin-bottom: 10px;
     border: 1px solid #D5D5D5;
     border-radius: 6px;
     font-family: 'Gotham Pro light';
@@ -310,29 +316,96 @@ html {
     border: none;
 }
 .personal_data_protection_policy{
-    margin-left: 25px;
+    position: inherit;
+    max-width: 225px;
+    margin-left: 45px;
 }
 .pdpp {
+    margin: 0 auto;
+    text-align: center;
     width: 275px;
     height: 55px;
     font-family: 'Gotham Pro';
     font-size: 12px;
     line-height: 15px;
-    text-align: center;
 }
 .pdpp__link {
     color: #009FE3;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 /* intro styles: end  */
+
+/* quiz styles: start  */
+.quiz {
+    background: red;
+    width: 1950px;
+    height: 1000px;
+}
+.quiz__title {
+    margin-top: 137px;
+    font-family: 'Gotham Pro';
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+    color: #1A191C;
+}
+.quiz__subtitle {
+    margin: 0 auto;
+    margin-bottom: 71px;
+    width: 765px;
+    height: 43px;
+    left: 622px;
+    top: 1190px;
+  
+    font-family: 'Gotham Pro';
+    font-size: 18px;
+    line-height: 33px;
+    text-align: center;
+  
+    color: #1A191C;
+}
+.quiz__wrap {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 1934px;
+    height: 950px;
+    left: 38px;
+    top: 981px;
+  
+    background: #F8F8F8;
+    border: 1px solid #000000;
+}
+.quiz__form {
+    display: flex;
+    margin: 0 auto;
+    width: 1170px;
+    height: 480px;
+    background: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+}
+.quiz__img {
+    width: 270px;
+    height: 480px;
+    left: 420px;
+    top: 1302px;
+    background: #ff0000;
+}
+.quiz__step {
+    margin-left: 45px;
+    margin-top: 27px;
+    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-bottom: solid 1px;
+}
+.step {
+    opacity: 0.2;
+    text-align: center;
+}
+.step:first-child {
+    text-align: left;
+}
+.step:last-child {
+    text-align: right;
+}

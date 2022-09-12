@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="min-width=1024, initial-scale=1">
     <title>Delomedica_Test</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -93,7 +93,7 @@
                         <img src="img/girl_2.svg" alt="медицинский_сотрудник" class="intro__logo-pic">
                     </div> 
                     <div class="feedback">
-                        <div class="feedback__form">
+                        <form class="feedback__form">
                             <ul class="feedback__text">
                                 <li>Оставьте заявку, и мы предоставим</li>
                                 <li>полный план профосмотра</li>
@@ -101,19 +101,37 @@
                                 <li>подходящий именно вашей организации</li>
                             </ul>
                             <div class="contact__consumer">
-                            <input type="tel" class="phone__consumer" placeholder="Ваш номер телефона:"></input></div>
-                            <button class="contact__button">Получить коммерческое предложение</button>
+                                <input type="tel" name="phone" class="phone__consumer" placeholder="Ваш номер телефона:"></input>
+                                <button class="contact__button">Получить коммерческое предложение</button>
+                            </div>
                             <div class="personal_data_protection_policy">
                                 <ul class="pdpp">
                                     <li>Передавая информацию сайту, вы принимаете условия</li>
                                     <li><a href="#!" class="pdpp__link">Политики защиты персональной информации</a></li>
                                 </ul>
                             </div>    
-
-                        </div>
+                        </form>
                     </div> 
                 </section>
+                
             </div>
         </main>
+        <sector class="quiz">
+            <div class="quiz__wrap">
+              <h2 class="quiz__title">Не знаете, какой профосмотр подойдет вашей организации?</h2>
+              <p class="quiz__subtitle">Ответьте на 4 вопроса, и мы подберем подходящий профосмотр, рассчитаем стоимость его проведения и вышлем коммерческое предложение</p>
+              <div class="quiz__form">
+                <div class="quiz__img"></div>
+                <div class="quiz__question">
+                  <div class="quiz__step">
+                    <div class="step"> Шаг 1</div>
+                    <div class="step"> Шаг 2</div>
+                    <div class="step"> Шаг 3</div>
+                    <div class="step"> Шаг 4</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </sector>
     </body>
 </html>
