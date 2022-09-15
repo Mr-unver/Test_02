@@ -103,13 +103,13 @@
                             <div class="contact__consumer">
                                 <input type="tel" name="phone" class="phone__consumer" placeholder="Ваш номер телефона:"></input>
                                 <button class="contact__button">Получить коммерческое предложение</button>
+                                <div class="personal_data_protection_policy">
+                                    <ul class="pdpp">
+                                        <li>Передавая информацию сайту, вы принимаете условия</li>
+                                        <li><a href="#!" class="pdpp__link">Политики защиты персональной информации</a></li>
+                                    </ul>
+                                </div>    
                             </div>
-                            <div class="personal_data_protection_policy">
-                                <ul class="pdpp">
-                                    <li>Передавая информацию сайту, вы принимаете условия</li>
-                                    <li><a href="#!" class="pdpp__link">Политики защиты персональной информации</a></li>
-                                </ul>
-                            </div>    
                         </form>
                     </div> 
                 </section>
@@ -120,44 +120,38 @@
             <div class="quiz__wrap">
                 <h2 class="quiz__title">Не знаете, какой профосмотр подойдет вашей организации?</h2>
                 <p class="quiz__subtitle">Ответьте на 4 вопроса, и мы подберем подходящий профосмотр, рассчитаем стоимость его проведения и вышлем коммерческое предложение</p>
-                    <div class="quiz__formcard">
-                        <div class=quiz__card>
+                <div class="quiz__formcard">
+                    <div class="quiz__step">
+                        <div class="step"> Шаг 1</div>
+                        <div class="step"> Шаг 2</div>
+                        <div class="step"> Шаг 3</div>
+                        <div class="step"> Шаг 4</div>
+                    </div>
+                    <div class="question__footer">
+                        <button class="question__buttonback"><span class="blue">⟵</span> Назад</button>
+                        <button class="question__buttonnext">Далее ⟶</button>
+                    </div>
+                    <div class="form">
+                        <div class="quiz__card">
                             <div class="quiz__img"><img src="img/step_1.png" alt="картинка_анкеты"></div>
                             <div class="quiz__question">
-                                <div class="quiz__step">
-                                    <div class="step"> Шаг 1</div>
-                                    <div class="step"> Шаг 2</div>
-                                    <div class="step"> Шаг 3</div>
-                                    <div class="step"> Шаг 4</div>
-                                </div>
                                 <div class="question"> 
                                     <div class="icon">1</div>
                                     <p>Чем занимается ваша организация?</p>
                                 </div>
                                 <form class="question__form">
-                                    <textarea class="question__textarea" placeholder="Введите ответ"></textarea>  
-                                <div class="question__footer">
-                                    <button class="question__buttonback"><span class="blue">⟵</span> Назад</button>
-                                    <button class="question__buttonnext">Далее ⟶</button>
-                                </div>
+                                    <textarea class="question__textarea" placeholder="Введите ответ"></textarea> 
+                                </form> 
                             </div>
                         </div>
-                    </div>
-                    <div class="quiz__formcard">
-                        <div class=quiz__card>
+                        <div class="quiz__card">
                             <div class="quiz__img"><img src="img/step_2.png" alt="картинка_анкеты"></div>
                             <div class="quiz__question">
-                                <div class="quiz__step">
-                                    <div class="step"> Шаг 1</div>
-                                    <div class="step"> Шаг 2</div>
-                                    <div class="step"> Шаг 3</div>
-                                    <div class="step"> Шаг 4</div>
-                                </div>
                                 <div class="question"> 
                                     <div class="icon">2</div>
                                     <p>Укажите вид необходимой услуги (Можно выбрать несколько вариантов)</p>
-                                  </div>
-                                  <form class="question__form">
+                                </div>
+                                <form class="question__form">
                                     <div class="question__field">
                                         <div class="colum">                     
                                             <p><input type="checkbox" name="#" value="">Предварительный/периодический медицинский осмотр</p>
@@ -176,61 +170,57 @@
                                             <p><input type="checkbox" name="#" value="">Я не знаю, нужна помощь в подборе</p>
                                         </div>
                                     </div>
-                                  </form>
-                                <div class="question__footer">
-                                    <button class="question__buttonback"><span class="blue">⟵</span> Назад</button>
-                                    <button class="question__buttonnext">Далее ⟶</button>
-                                </div>
+                                </form>
                             </div>
                         </div>
-                    </div>
-                    <div class="quiz__formcard">
-                        <div class=quiz__card>
+                        <div class="quiz__card">
                             <div class="quiz__img"><img src="img/step_3.png" alt="картинка_анкеты"></div>
                             <div class="quiz__question">
-                                <div class="quiz__step">
-                                    <div class="step"> Шаг 1</div>
-                                    <div class="step"> Шаг 2</div>
-                                    <div class="step"> Шаг 3</div>
-                                    <div class="step"> Шаг 4</div>
-                                </div>
                                 <div class="question"> 
                                     <div class="icon">3</div>
                                     <p>Укажите количество сотрудников, которым нужно провести профосмотр.</p>
                                 </div>
                                 <form class="question__form">
-                                    <textarea class="question__textarea" placeholder="Введите число"></textarea>  
-                                <div class="question__footer">
-                                    <button class="question__buttonback"><span class="blue">⟵</span> Назад</button>
-                                    <button class="question__buttonnext">Далее ⟶</button>
-                                </div>
+                                    <textarea class="question__textarea" placeholder="Введите число"></textarea>
+                                </form>   
                             </div>
                         </div>
-                    </div>
-                    <div class="quiz__formcard">
-                        <div class=quiz__card>
-                            <div class="quiz__img"><img src="img/step_4.png" alt="картинка_анкеты"></div>
-                            <div class="quiz__question">
-                                <div class="quiz__step">
-                                    <div class="step"> Шаг 1</div>
-                                    <div class="step"> Шаг 2</div>
-                                    <div class="step"> Шаг 3</div>
-                                    <div class="step"> Шаг 4</div>
+                        <div class="quiz__card">
+                                <div class="quiz__img"><img src="img/step_4.png" alt="картинка_анкеты"></div>
+                                <div class="quiz__question">
+                                    <div class="question"> 
+                                        <div class="icon">4</div>
+                                        <p>Вы планируете пройти профосмотр в одном из наших медцентров или требуется выездная бригада?</p>
+                                    </div>
+                                    <form class="question__radio">
+                                            <input type="radio" name="choice" value="in_medical_center">
+                                            <label for="in">В медцентре</label>
+                                        
+                                            <input type="radio" name="choice" value="out_medical_center">
+                                            <label for="out">Требуется выездная бригада</label>
+                                    </form>
                                 </div>
-                                <div class="question"> 
-                                    <div class="icon">4</div>
-                                    <p>Вы планируете пройти профосмотр в одном из наших медцентров или требуется выездная бригада?</p>
-                                </div>
-                                <div class="question__radio"></div>    
-                                <div class="question__footer">
-                                    <button class="question__buttonback"><span class="blue">⟵</span> Назад</button>
-                                    <button class="question__buttonnext">Далее ⟶</button>
-                                </div>
+                        </div>
+                        <div class="quiz__card">
+                            <div class="lastquiz_card">
+                                <p class="lastquiz_question">Введите номер телефона, и мы вышлем вам расчет стоимости профосмотра и коммерческое предложение</p>
+                                <form class="lastquiz_card__form">
+                                    <div class="contact__consumer">
+                                        <input type="tel" name="phone" class="phone__consumer" placeholder="Ваш номер телефона:"></input>
+                                        <button class="contact__button" disabled>Получить коммерческое предложение</button>
+                                        <div class="personal_data_protection_policy">
+                                            <ul class="pdpp">
+                                                <li>Передавая информацию сайту, вы принимаете условия</li>
+                                                <li><a href="#!" class="pdpp__link">Политики защиты персональной информации</a></li>
+                                            </ul>
+                                        </div>    
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>    
+             </div>
         </sector>
         <script src="app.js"></script>
     </body>

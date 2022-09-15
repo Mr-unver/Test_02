@@ -1,18 +1,22 @@
 const BtnNext = document.querySelector('.question__buttonnext')
 const BtnBack = document.querySelector('.question__buttonback')
-const quiz__formcard = document.querySelector('.quiz__formcard')
-const slidesCount = quiz__formcard.querySelectorAll('div').length
+const form = document.querySelector('.form')
+const quizstep = document.querySelector('.quiz__step')
+const slidesCount = form.querySelectorAll('.quiz__card').length
 
 let activeSlideIndex = 0
+BtnBackHide ()
 
 function changeSlide(direction) {
     if (direction === 'next') {
         BtnBack.style.visibility = "visible"
+        
         activeSlideIndex++
         if (activeSlideIndex === slidesCount-1)
         {
             BtnNext.style.visibility = "hidden"
             BtnBack.style.visibility = "hidden"
+            quizstep.style.visibility = "hidden"
         }
     } else if (direction === 'back') {
         BtnNext.style.visibility = "visible"
@@ -23,11 +27,8 @@ function changeSlide(direction) {
         else (activeSlideIndex < 0) 
           activeSlideIndex--
     }
-
-    const height = quiz__formcard.clientHeight
-
-    quiz__formcard.style.transform = `translateY(${-activeSlideIndex*height}px)`
-    
+    const height = form.clientHeight
+    form.style.transform = `translateY(${-activeSlideIndex*height}px)`
 }
 
 function BtnBackHide () {
@@ -35,8 +36,6 @@ function BtnBackHide () {
       BtnBack.style.visibility = "hidden"
   }
 }
-
-BtnBackHide ()
 
 BtnNext.addEventListener('click', () => {
     changeSlide('next')
